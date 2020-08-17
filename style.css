@@ -1,0 +1,166 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	/* overflow: hidden; */
+	font-family: 'Roboto', sans-serif;
+	background: #f4f4f4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 20px;
+}
+
+h1 {
+	color: #5fbaa7;
+	padding: 10px 0;
+	font-size: 3rem;
+}
+
+h3 {
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.btn {
+	color: #fff;
+	background-color: #5fbaa7;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 6px 12px;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.img-money {
+	width: 150px;
+}
+
+.currency {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 0;
+}
+
+.currency select {
+	padding: 10px 20px 10px 10px;
+	border: 1px solid #dedede;
+	font-size: 18px;
+	outline: none;
+	border: 1px solid #dedede;
+	position: relative;
+}
+
+.currency input {
+	border: 0;
+	/* background: transparent; */
+	font-size: 30px;
+	text-align: right;
+	outline: none;
+	border: 1px solid #dedede;
+}
+
+.swap-rate-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.rate {
+	color: #5fbaa7;
+	font-size: 18px;
+	padding: 0 10px;
+	font-weight: bold;
+}
+
+.last-update {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 1rem;
+}
+
+@media (max-device-width: 600px) {
+	body {
+		display: block;
+		text-align: center;
+		margin: 0;
+		padding: 1rem;
+	}
+
+	.swap-rate-container {
+		justify-content: center;
+	}
+	.img-money {
+		width: 100px;
+		height: 100px;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
+	h3 {
+		font-size: 1.2rem;
+	}
+
+	.currency input {
+		max-width: 200px;
+		font-size: 24px;
+		padding: 5px;
+	}
+
+	.currency select {
+		font-size: 18px;
+		padding: 10px 10px;
+	}
+}
+
+@media (max-device-width: 400px) {
+	body {
+		display: block;
+		text-align: center;
+		margin: 0;
+		padding: 1rem;
+	}
+
+	.swap-rate-container {
+		justify-content: center;
+	}
+	.img-money {
+		width: 100px;
+		height: 100px;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
+	h3 {
+		font-size: 1.2rem;
+	}
+
+	.currency input {
+		max-width: 200px;
+		font-size: 18px;
+		padding: 5px;
+	}
+
+	.currency select {
+		font-size: 16px;
+		padding: 5px;
+	}
+
+	.currency {
+		flex-wrap: wrap;
+	}
+}
